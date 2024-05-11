@@ -24,6 +24,20 @@ import Button from '../components/vue/Button.vue';
             </div>
             <span class="flex justify-end mx-6 text-2xl text-white">25</span>
             <hr>
+            <div class="ml-8 mt-4">
+                <select v-model="listItems">
+                    <option value="A">Product A</option>
+                    <option value="B">Product B</option>
+                    <option value="C">Product C</option>
+                </select>
+            </div>
+            <button class="alert ml-8 mt-4 bg-orange-600 px-2 py-1 rounded-md shadow-md font-semibold text-white hover:bg-orange-700">Click</button>
+            <script>
+            const button = document.querySelector("button.alert");
+            button.addEventListener("click", () => {
+              alert("Hello!! Thanks for click me!");
+            });
+            </script>
             <div class="grid grid-cols-4 grid-rows-4 ml-8 mr-4 mb-4 mt-4 gap-4">
                 <Button/>
                 <Button/>
